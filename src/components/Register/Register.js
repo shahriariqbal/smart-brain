@@ -41,7 +41,7 @@ class Register extends React.Component {
   .then(user =>{
     if (user ) {
       this.props.loadUser(user)
-      this.props.onRouteChange('home');
+      this.props.onRouteChange('home'); 
     }
   })
     
@@ -49,11 +49,11 @@ class Register extends React.Component {
 
 
 
-  render(){
+render(){ 
 
 
 
-return(
+ return(
 
 	<article className="br3 ba  b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
 
@@ -78,7 +78,8 @@ return(
 
       <div className="mt3">
         <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
-        <input className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
+        <input 
+        className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
         type="email" 
         name="email-address"  
         id="email-address"
@@ -94,7 +95,8 @@ return(
 
       <div className="mv3">
         <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
-        <input className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
+        <input 
+        className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
         type="password" 
         name="password"  
         id="password"
